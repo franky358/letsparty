@@ -6,6 +6,7 @@ import AboutSection from "../../../../containers/layouts/sections/event/about";
 import Services from "@/containers/layouts/sections/app/services";
 import Portfolio from "@/containers/layouts/sections/resume/section";
 import About from "@/containers/layouts/sections/gym/about";
+import Footer from "@/containers/layouts/sections/resume/footer";
 
 const Event = () => {
   useEffect(() => {
@@ -25,6 +26,7 @@ const Event = () => {
       <Portfolio />
       <Services />
       <About />
+      <Footer />
     </div>
   );
 };

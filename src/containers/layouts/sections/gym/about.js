@@ -28,7 +28,7 @@ const About = () => (
               <div className="format-small-text"></div>
               <div className="format-head-text">
                 <h3 className="about-font-header gradient-text">
-                  Acerca de mi
+                  Acerca de mí
                 </h3>
               </div>
               <div
@@ -39,8 +39,8 @@ const About = () => (
                   className="p-light about-para"
                   style={{ textAlign: "justify" }}
                 >
-                  Desde pequeña, siempre me ha fascinado cómo un toque especial
-                  puede{" "}
+                  Mi nombre es Karen, desde pequeña, siempre me ha fascinado
+                  cómo un toque especial puede{" "}
                   <strong style={{ fontWeight: "bold" }}>transformar</strong> un
                   espacio ordinario en algo{" "}
                   <strong style={{ fontWeight: "bold" }}>mágico</strong>. Esa
@@ -50,7 +50,7 @@ const About = () => (
                   <a
                     href="https://www.instagram.com/letspartyevents_mx/"
                     target="_blank"
-                    style={{ color: "blue", textDecoration: "underline" }}
+                    style={{ color: "#ff549a", textDecoration: "underline" }}
                   >
                     <strong style={{ fontWeight: "bold" }}> Let’s Party</strong>
                   </a>
@@ -93,6 +93,8 @@ const About = () => (
                   realidad!
                 </p>
               </div>
+
+              <h3 style={{ marginBottom: "2rem" }}>Aprender para emprender!</h3>
               <a
                 className="btn btn-default primary-btn"
                 href="https://api.whatsapp.com/send?phone=+525554699114&text=Quiero%20informaci%C3%B3n%20del%20curso%20de%20decoraci%C3%B3n%20%F0%9F%8E%88"

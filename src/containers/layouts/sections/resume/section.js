@@ -6,12 +6,14 @@ const Section = () => (
     <Row>
       <Col md="8" className="offset-md-2">
         <div className="title title2">
-          <h6 className="font-primary borders main-text text-uppercase">
-            <span>LO QUE SABRÁS HACER AL FINALIZAR EL CURSO</span>
-          </h6>
           <div className="sub-title">
             <div>
-              <h2 className="title-text">Una probadita de lo que harás</h2>
+              <h2
+                className="title-text"
+                style={{ paddingLeft: "1rem", paddingRight: "1rem" }}
+              >
+                Una probadita de lo que harás
+              </h2>
             </div>
           </div>
         </div>
