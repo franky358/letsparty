@@ -31,7 +31,10 @@ const About = () => (
                   Acerca de mi
                 </h3>
               </div>
-              <div className="format-sub-text">
+              <div
+                className="format-sub-text"
+                style={{ paddingRight: "1rem", paddingLeft: "1rem" }}
+              >
                 <p
                   className="p-light about-para"
                   style={{ textAlign: "justify" }}
