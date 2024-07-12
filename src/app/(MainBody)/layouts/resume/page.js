@@ -15,7 +15,7 @@ import SubscribeSection from "../../../../containers/layouts/sections/resume/sub
 
 const Resume = () => {
   useEffect(() => {
-    document.body.style.setProperty("--primary", "#1f232c");
+    document.body.style.setProperty("--primary", "#e3154f");
     document.body.style.setProperty("--secondary", "#676767");
     document.body.style.setProperty("--light", "#000");
     document.body.style.setProperty("--dark", "#000");

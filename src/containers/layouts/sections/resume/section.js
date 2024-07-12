@@ -1,8 +1,8 @@
 import React from "react";
 import Portfolio from "../../../../containers/portfolio/basic";
 import { Row, Col } from "reactstrap";
-const Section = () => (
-  <section className="resume portfolio-section zoom-gallery">
+const Section = ({ isEventPage }) => (
+  <section className="resume portfolio-section zoom-gallery" id="eventos">
     <Row>
       <Col md="8" className="offset-md-2">
         <div className="title title2">
@@ -12,14 +12,20 @@ const Section = () => (
                 className="title-text"
                 style={{ paddingLeft: "1rem", paddingRight: "1rem" }}
               >
-                Una probadita de lo que harás
+                {isEventPage
+                  ? "Algunas de nuestras decoraciones"
+                  : "Módulos del curso"}
               </h2>
+              <p style={{ marginTop: "1rem" }}>Selecciona una categoría 👇</p>
             </div>
           </div>
         </div>
       </Col>
     </Row>
-    <Portfolio className="col-lg-3 col-sm-6 isotopeSelector" />
+    <Portfolio
+      className="col-lg-3 col-sm-6 isotopeSelector"
+      isEventPage={isEventPage}
+    />
   </section>
 );
 

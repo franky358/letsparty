@@ -3,9 +3,12 @@ import LightGallery from "lightgallery/react";
 import "lightgallery/css/lightgallery.css";
 import lgThumbnail from "lightgallery/plugins/thumbnail";
 import lgZoom from "lightgallery/plugins/zoom";
+import { ShimmerImgDataEvent } from "../database2";
 import { ShimmerImgData } from "../database";
 
-const ShimmerImgFunc = ({ className, title, subTitle }) => {
+const ShimmerImgFunc = ({ className, title, subTitle, isEventPage }) => {
+  const shimmerData = isEventPage ? ShimmerImgDataEvent : ShimmerImgData;
+
   return (
     <LightGallery
       speed={500}
@@ -14,8 +17,8 @@ const ShimmerImgFunc = ({ className, title, subTitle }) => {
       backdropDuration={300}
       addClass="custom-lightbox"
     >
-      {ShimmerImgData.length > 0 &&
-        ShimmerImgData.map((item, i) => (
+      {shimmerData.length > 0 &&
+        shimmerData.map((item, i) => (
           <a
             key={i}
             href={`/assets/images${item.img}`}

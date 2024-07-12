@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { TabContent, TabPane, Nav, NavItem, NavLink } from "reactstrap";
 import { Container, Row, Col } from "reactstrap";
-import AllImgFun from "./Gallerys/allImgs";
 import AroImgComponent from "./Gallerys/aroImgs";
 import ParedImgComponent from "./Gallerys/paredImgs";
 import ShimmerImgComponent from "./Gallerys/shimmerImgs";
@@ -9,7 +8,6 @@ import MamparaImgComponent from "./Gallerys/mamparaImg";
 import AroConLonaImgComponent from "./Gallerys/aroLonaImgs";
 import MesaDulcesImgComponent from "./Gallerys/mesaImgs";
 import {
-  AllImgData,
   AroImgData,
   ParedImgData,
   ShimmerImgData,
@@ -17,13 +15,21 @@ import {
   AroConLonaImgData,
   MesaDulcesImgData,
 } from "./database";
+import {
+  AroImgDataEvent,
+  ParedImgDataEvent,
+  ShimmerImgDataEvent,
+  MamparaImgDataEvent,
+  AroConLonaImgDataEvent,
+  MesaDulcesImgDataEvent,
+} from "./database2";
 import "lightgallery/css/lightgallery.css";
 import "lightgallery/css/lg-thumbnail.css";
 import "lightgallery/css/lg-zoom.css";
 
 const ITEMS_PER_PAGE = 6;
 
-const Basic = ({ className, title, subTitle, fluid }) => {
+const Basic = ({ className, title, subTitle, fluid, isEventPage }) => {
   const [activeTab, setActiveTab] = useState("1");
   const [currentPage, setCurrentPage] = useState(1);
   const [paginatedData, setPaginatedData] = useState([]);
@@ -31,17 +37,17 @@ const Basic = ({ className, title, subTitle, fluid }) => {
   const getDataByTab = (tab) => {
     switch (tab) {
       case "1":
-        return ParedImgData;
+        return isEventPage ? ParedImgDataEvent : ParedImgData;
       case "2":
-        return AroImgData;
+        return isEventPage ? AroImgDataEvent : AroImgData;
       case "3":
-        return MamparaImgData;
+        return isEventPage ? MamparaImgDataEvent : MamparaImgData;
       case "4":
-        return ShimmerImgData;
+        return isEventPage ? ShimmerImgDataEvent : ShimmerImgData;
       case "5":
-        return AroConLonaImgData;
+        return isEventPage ? AroConLonaImgDataEvent : AroConLonaImgData;
       case "6":
-        return MesaDulcesImgData;
+        return isEventPage ? MesaDulcesImgDataEvent : MesaDulcesImgData;
 
       default:
         return [];
@@ -52,9 +58,7 @@ const Basic = ({ className, title, subTitle, fluid }) => {
     const data = getDataByTab(activeTab);
     const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
     const paginated = data.slice(startIndex, startIndex + ITEMS_PER_PAGE);
-    console.log("Data:", data);
-    console.log("Start Index:", startIndex);
-    console.log("Paginated Data:", paginated);
+
     setPaginatedData(paginated);
   }, [activeTab, currentPage]);
 
@@ -88,6 +92,7 @@ const Basic = ({ className, title, subTitle, fluid }) => {
             className={className}
             title={title}
             subTitle={subTitle}
+            isEventPage={isEventPage}
           />
         );
       case "2":
@@ -97,6 +102,7 @@ const Basic = ({ className, title, subTitle, fluid }) => {
             className={className}
             title={title}
             subTitle={subTitle}
+            isEventPage={isEventPage}
           />
         );
       case "3":
@@ -106,6 +112,7 @@ const Basic = ({ className, title, subTitle, fluid }) => {
             className={className}
             title={title}
             subTitle={subTitle}
+            isEventPage={isEventPage}
           />
         );
       case "4":
@@ -115,6 +122,7 @@ const Basic = ({ className, title, subTitle, fluid }) => {
             className={className}
             title={title}
             subTitle={subTitle}
+            isEventPage={isEventPage}
           />
         );
       case "5":
@@ -124,6 +132,7 @@ const Basic = ({ className, title, subTitle, fluid }) => {
             className={className}
             title={title}
             subTitle={subTitle}
+            isEventPage={isEventPage}
           />
         );
       case "6":
@@ -133,6 +142,7 @@ const Basic = ({ className, title, subTitle, fluid }) => {
             className={className}
             title={title}
             subTitle={subTitle}
+            isEventPage={isEventPage}
           />
         );
 

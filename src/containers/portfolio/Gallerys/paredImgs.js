@@ -5,7 +5,11 @@ import lgThumbnail from "lightgallery/plugins/thumbnail";
 import lgZoom from "lightgallery/plugins/zoom";
 import { ParedImgData } from "../database";
 
-const ParedImgFunc = ({ className, title, subTitle }) => {
+import { ParedImgDataEvent } from "../database2";
+
+const ParedImgFunc = ({ className, title, subTitle, isEventPage }) => {
+  const wallData = isEventPage ? ParedImgDataEvent : ParedImgData;
+
   return (
     <LightGallery
       speed={500}
@@ -14,8 +18,8 @@ const ParedImgFunc = ({ className, title, subTitle }) => {
       backdropDuration={300}
       addClass="custom-lightbox"
     >
-      {ParedImgData.length > 0 &&
-        ParedImgData.map((item, i) => (
+      {wallData.length > 0 &&
+        wallData.map((item, i) => (
           <a
             key={i}
             href={`/assets/images${item.img}`}

@@ -1,63 +1,75 @@
-import React from 'react';
-import Typewriter from 'typewriter-effect';
-import {Container,Row,Col} from 'reactstrap';
+import React from "react";
+import Typewriter from "typewriter-effect";
+import { Container, Row, Col } from "reactstrap";
+import { FaWhatsapp } from "@react-icons/all-files/fa/FaWhatsapp";
 
 const Banner = () => (
-    <section className="resume header" id="header">
-        <div className="header7-content">
-            <div className="resume bg bg-pink">
-                <Container>
-                    <Row>
-                        <Col lg="5" md="6">
-                            <img alt="" className="img-fluid set-abs bottom-0 right-0" src="/assets/images/resume/h7.png" />
-                        </Col>
-                        <Col lg="6" md="6" className="offset-lg-1">
-                            <div className="center-text">
-                                <div>
-                                    <div className="header-sub-text">
-                                        <h5 className="text-hash text-uppercase"># resume</h5>
-                                    </div>
-                                    <div className="header-text">
-                                        <h1><span className="bold-text">Hi, I’m</span><br /> Elana Parker</h1>
-                                    </div>
-                                    <div className="header-sub-text">
-                                        <h4 className="font-secondary d-flex">Html , <span className="typed-resume">
-                                        <Typewriter
-                                            options={{
-                                                strings:['Css, Bootstrap, Java Script'],
-                                                autoStart: true,
-                                                loop: true,
-                                            }}
-                                            />
-                                            {/* <Typed
-                                                strings={['Css, Bootstrap, Java Script']}
-                                                typeSpeed={80}
-                                                backSpeed={50}
-                                                showCursor={false}
-                                                loop >
-                                            </Typed> */}
-                                            </span></h4>
-                                    </div>
-                                    <div className="header-sub-text">
-                                        <p className="font-secondary font-large">Lorem Ipsum is simply dummy text of the
-                                            printing andtypesetting
-                                            industry. Lorem Ipsum has been the industry's standard dummy textever since the
-                                        1500s, when an unknown.</p>
-                                    </div>
-                                    <div className="link-horizontal">
-                                        <ul>
-                                            <li><a className="btn btn-default primary-btn back-white">know more</a></li>
-                                            <li><a className="btn btn-default primary-btn back-white">download cv</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </Col>
-                    </Row>
-                </Container>
-            </div>
-        </div>
-    </section>
-)
+  <section
+    className="resume header"
+    id="letsparty"
+    style={{ background: "#E90074" }}
+  >
+    <div className="header7-content">
+      <div className="resume bg bg-pink">
+        <Container>
+          <Row>
+            <Col lg="6" md="6" className="offset-lg-1">
+              <div className="center-text">
+                <div>
+                  <div className="header-text" style={{ marginTop: "2rem" }}>
+                    <h1>
+                      <span style={{ fontWeight: "bold" }}>
+                        Decoración con globos
+                      </span>
+                    </h1>
+                  </div>
+                  <div
+                    className="header-sub-text"
+                    style={{
+                      marginTop: "2rem",
+                      height: "48px",
+                    }}
+                  >
+                    <h4 className="font-secondary d-flex">
+                      <span className="">
+                        <Typewriter
+                          options={{
+                            strings: [
+                              "Backdrops, Candy Bar, Tepee & Picnic, Table Styling",
+                            ],
+                            autoStart: true,
+                            loop: true,
+                          }}
+                        />
+                      </span>
+                    </h4>
+                  </div>
+                  <div className="header-sub-text">
+                    <p className="font-secondary font-large">
+                      Con un toque especial y con mucho amor en lo que hacemos,
+                      lograremos transformar tu espacio en algo mágico
+                    </p>
+                  </div>
+                  <div className="link-horizontal">
+                    <ul>
+                      <li>
+                        <a
+                          className="btn btn-default primary-btn"
+                          href="https://api.whatsapp.com/send?phone=+525554699114&text=Quiero%20informaci%C3%B3n%20del%20curso%20de%20decoraci%C3%B3n%20%F0%9F%8E%88"
+                        >
+                          Pedir Informes <FaWhatsapp size={16} />
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </Col>
+          </Row>
+        </Container>
+      </div>
+    </div>
+  </section>
+);
 
 export default Banner;

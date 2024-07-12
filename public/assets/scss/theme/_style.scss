@@ -2767,10 +2767,7 @@ header {
       background-image: url("/assets/images/music/slider.jpg");
       background-attachment: fixed;
     }
-    &.resume {
-      background-image: url("/assets/images/resume/h7-bg-text.png");
-      background-size: contain;
-    }
+
     &.saas1-header {
       background-image: url("/assets/images/saas1/slider-banner.jpg");
     }
@@ -15923,8 +15920,15 @@ header {
   .responsive-btn {
     display: none;
     i {
+      color: $pink !important;
       font-size: calc(22px + (25 - 22) * ((100vw - 300px) / (1920 - 300)));
-      color: $white !important;
+    }
+  }
+  .responsive-btn2 {
+    display: none;
+    i {
+      font-size: calc(22px + (25 - 22) * ((100vw - 300px) / (1920 - 300)));
+      color: $black !important;
     }
   }
   nav {

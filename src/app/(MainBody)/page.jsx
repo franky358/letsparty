@@ -1,16 +1,6 @@
 "use client";
 import { useEffect } from "react";
-import BlogSection from "../../containers/landing/blog";
-import DemoSection from "../../containers/landing/demo";
-import ElementSection from "../../containers/landing/elements";
-import FeaturesSection from "../../containers/landing/features";
-import FooterSection from "../../containers/landing/footer";
-import GiftSection from "../../containers/landing/git-section";
-import Header from "../../containers/landing/header";
-import PortfolioSection from "../../containers/landing/portfolio";
-import RatSection from "../../containers/landing/rat";
-import TestimonialSection from "../../containers/landing/testimonial";
-import WhatinsideSection from "../../containers/landing/whatinside";
+
 import Event from "./layouts/event/page";
 
 const Portfolio = () => {
