@@ -19,7 +19,7 @@ const Banner = () => (
                   <div className="header-text" style={{ marginTop: "2rem" }}>
                     <h1>
                       <span style={{ fontWeight: "bold" }}>
-                        Decoración con globos
+                        Decoraciones con globos
                       </span>
                     </h1>
                   </div>
