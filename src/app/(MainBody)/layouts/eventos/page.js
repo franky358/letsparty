@@ -25,7 +25,7 @@ const Event = () => {
         <title>Eventos</title>
       </Head>
       <Header2 className="event nav-lg" />
-      <Banner />
+      <Banner isEventPage={true} />
       <Portfolio isEventPage={true} />
       <About isEventPage={true} />
       <Footer />

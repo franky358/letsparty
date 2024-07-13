@@ -3,7 +3,7 @@ import Typewriter from "typewriter-effect";
 import { Container, Row, Col } from "reactstrap";
 import { FaWhatsapp } from "@react-icons/all-files/fa/FaWhatsapp";
 
-const Banner = () => (
+const Banner = ({ isEventPage }) => (
   <section
     className="resume header"
     id="letsparty"
