@@ -16,7 +16,11 @@ const About = ({ isEventPage }) => (
                 <img
                   alt=""
                   className="img-fluid format-img"
-                  src="/assets/images/pandingo.jpg"
+                  src={
+                    isEventPage
+                      ? "/assets/images/pandingo2.jpg"
+                      : "/assets/images/pandingo.jpg"
+                  }
                 />
               </div>
             </div>
@@ -79,29 +83,15 @@ const About = ({ isEventPage }) => (
                       y{" "}
                       <strong style={{ fontWeight: "bold" }}>backdrops</strong>.
                     </p>
+
                     <p
                       className="p-light about-para"
                       style={{ textAlign: "justify" }}
                     >
-                      La verdadera{" "}
-                      <strong style={{ fontWeight: "bold" }}>alegría</strong>{" "}
-                      vino cuando comencé a decorar eventos con globos, creando
-                      ambientes únicos y llenos de color. Mi equipo y yo nos
-                      especializamos en transformar cualquier espacio con
-                      <strong style={{ fontWeight: "bold" }}>
-                        {" "}
-                        arreglos de globos
-                      </strong>{" "}
-                      que van desde arcos y columnas hasta diseños
-                      personalizados que dejan a todos maravillados.
-                    </p>
-                    <p
-                      className="p-light about-para"
-                      style={{ textAlign: "justify" }}
-                    >
-                      Hoy, ofrecemos servicios de decoración de eventos con
-                      globos para todo tipo de celebraciones, ya sean{" "}
-                      <strong style={{ fontWeight: "bold" }}>bodas</strong>,
+                      Al día de hoy, ofrecemos servicios de decoración de
+                      eventos con globos para todo tipo de celebraciones, ya
+                      sean <strong style={{ fontWeight: "bold" }}>bodas</strong>
+                      ,
                       <strong style={{ fontWeight: "bold" }}>
                         {" "}
                         cumpleaños
@@ -109,17 +99,25 @@ const About = ({ isEventPage }) => (
                       ,
                       <strong style={{ fontWeight: "bold" }}>
                         {" "}
-                        fiestas infantiles
+                        fiestas infantiles,
                       </strong>{" "}
-                      o cualquier evento especial. Permítenos hacer de tu
-                      próximo evento algo
                       <strong style={{ fontWeight: "bold" }}>
                         {" "}
-                        inolvidable
+                        baby showers,
                       </strong>{" "}
-                      con nuestros impresionantes diseños de globos.
-                      ¡Contáctanos y convierte tus sueños decorativos en
-                      realidad!
+                      <strong style={{ fontWeight: "bold" }}>
+                        {" "}
+                        gender reveal,
+                      </strong>{" "}
+                      o cualquier evento especial.
+                    </p>
+                    <p
+                      className="p-light about-para"
+                      style={{ textAlign: "justify" }}
+                    >
+                      Permítenos hacer de tu próximo evento, algo inolvidable
+                      con nuestros increíbles diseños de globos. ¡Contáctanos y
+                      deja la magia de tu evento en nuestras manos!
                     </p>
                   </>
                 ) : (
@@ -201,7 +199,7 @@ const About = ({ isEventPage }) => (
 
               <h3 style={{ marginBottom: "2rem" }}>
                 {isEventPage
-                  ? "Hagamos de tu evento una ocasión inolvidable"
+                  ? "¡Decoramos con el corazón y se nota en todas nuestras decoraciones!"
                   : "Aprender para emprender!"}
               </h3>
               <a
