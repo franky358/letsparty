@@ -54,8 +54,7 @@ const About = ({ isEventPage }) => (
                       <strong style={{ fontWeight: "bold" }}>mágico</strong>.
                       Esta{" "}
                       <strong style={{ fontWeight: "bold" }}>pasión</strong> me
-                      llevó a certificarme como Wedding & Event Planner, y en
-                      noviembre de 2020, decidí hacer realidad un sueño: crear{" "}
+                      llevó a crear en 2020{" "}
                       <a
                         href="https://www.instagram.com/letspartyevents_mx/"
                         target="_blank"
@@ -72,12 +71,13 @@ const About = ({ isEventPage }) => (
                       <strong style={{ fontWeight: "bold" }}>
                         pícnic y tepee
                       </strong>
-                      , y rápidamente amplié mi oferta a{" "}
+                      , pronto amplié mi oferta a{" "}
                       <strong style={{ fontWeight: "bold" }}>
                         eventos infantiles
                       </strong>
-                      ,{" "}
+                      ,
                       <strong style={{ fontWeight: "bold" }}>
+                        {" "}
                         mesas de dulces
                       </strong>{" "}
                       y{" "}
@@ -88,10 +88,8 @@ const About = ({ isEventPage }) => (
                       className="p-light about-para"
                       style={{ textAlign: "justify" }}
                     >
-                      Al día de hoy, ofrecemos servicios de decoración de
-                      eventos con globos para todo tipo de celebraciones, ya
-                      sean <strong style={{ fontWeight: "bold" }}>bodas</strong>
-                      ,
+                      Hoy, ofrecemos decoración de eventos con globos para{" "}
+                      <strong style={{ fontWeight: "bold" }}> bodas</strong>,
                       <strong style={{ fontWeight: "bold" }}>
                         {" "}
                         cumpleaños
@@ -99,25 +97,32 @@ const About = ({ isEventPage }) => (
                       ,
                       <strong style={{ fontWeight: "bold" }}>
                         {" "}
-                        fiestas infantiles,
-                      </strong>{" "}
+                        fiestas infantiles
+                      </strong>
+                      ,
                       <strong style={{ fontWeight: "bold" }}>
                         {" "}
-                        baby showers,
-                      </strong>{" "}
+                        baby showers
+                      </strong>
+                      ,
                       <strong style={{ fontWeight: "bold" }}>
                         {" "}
-                        gender reveal,
+                        gender reveal
                       </strong>{" "}
-                      o cualquier evento especial.
+                      y más.
                     </p>
+
                     <p
                       className="p-light about-para"
                       style={{ textAlign: "justify" }}
                     >
-                      Permítenos hacer de tu próximo evento algo inolvidable con
-                      nuestros increíbles diseños de globos. ¡Contáctanos y deja
-                      la magia de tu evento en nuestras manos!
+                      Permítenos hacer de tu próximo evento algo{" "}
+                      <strong style={{ fontWeight: "bold" }}>
+                        {" "}
+                        inolvidable
+                      </strong>{" "}
+                      con nuestros increíbles diseños de globos. ¡Contáctanos y
+                      deja la magia de tu evento en nuestras manos!
                     </p>
                   </>
                 ) : (
@@ -126,17 +131,16 @@ const About = ({ isEventPage }) => (
                       className="p-light about-para"
                       style={{ textAlign: "justify" }}
                     >
-                      Mi nombre es Karen, desde pequeña, siempre me ha fascinado
-                      cómo un toque especial puede{" "}
+                      Hola, soy Karen. Desde niña, me ha fascinado cómo un toque
+                      especial puede{" "}
                       <strong style={{ fontWeight: "bold" }}>
                         transformar
                       </strong>{" "}
                       un espacio ordinario en algo{" "}
                       <strong style={{ fontWeight: "bold" }}>mágico</strong>.
-                      Esa
-                      <strong style={{ fontWeight: "bold" }}> pasión</strong> me
-                      llevó a certificarme como Wedding & Event Planner, y en
-                      noviembre de 2020, decidí hacer realidad un sueño: crear
+                      Esta{" "}
+                      <strong style={{ fontWeight: "bold" }}>pasión</strong> me
+                      llevó a crear en 2020
                       <a
                         href="https://www.instagram.com/letspartyevents_mx/"
                         target="_blank"
@@ -150,46 +154,40 @@ const About = ({ isEventPage }) => (
                           Let’s Party
                         </strong>
                       </a>
-                      . Comencé con servicios de{" "}
+                      . Comencé con servicios de
                       <strong style={{ fontWeight: "bold" }}>
+                        {" "}
                         pícnic y tepee
                       </strong>
-                      , y rápidamente amplié mi oferta a{" "}
+                      , y pronto amplié a
                       <strong style={{ fontWeight: "bold" }}>
+                        {" "}
                         eventos infantiles
                       </strong>
-                      ,{" "}
+                      ,
                       <strong style={{ fontWeight: "bold" }}>
+                        {" "}
                         mesas de dulces
                       </strong>{" "}
-                      y{" "}
-                      <strong style={{ fontWeight: "bold" }}>backdrops</strong>.
+                      y
+                      <strong style={{ fontWeight: "bold" }}> backdrops</strong>
+                      .
                     </p>
-                    <p
-                      className="p-light about-para"
-                      style={{ textAlign: "justify" }}
-                    >
-                      La verdadera{" "}
-                      <strong style={{ fontWeight: "bold" }}>alegría</strong>{" "}
-                      vino cuando decidí compartir mi pasión y conocimientos con
-                      otros. Creé un manual lleno de técnicas y secretos que he
-                      perfeccionado con los años. Mi primer curso de decoración
-                      fue un éxito, y ver a mis alumnos{" "}
-                      <strong style={{ fontWeight: "bold" }}>aprender</strong> y{" "}
-                      <strong style={{ fontWeight: "bold" }}>crecer </strong>
-                      fue increíblemente gratificante.
-                    </p>
+
                     <p
                       className="p-light about-para"
                       style={{ textAlign: "justify" }}
                     >
                       Hoy, ofrezco cursos para todos los que quieran aprender el
-                      arte de la decoración, ya sea para sus{" "}
-                      <strong style={{ fontWeight: "bold" }}>negocios</strong> o
-                      para hacer de sus eventos personales algo{" "}
+                      arte de la decoración, ya sea para sus
+                      <strong style={{ fontWeight: "bold" }}>
+                        {" "}
+                        negocios
+                      </strong>{" "}
+                      o para hacer de sus eventos algo{" "}
                       <strong style={{ fontWeight: "bold" }}>
                         inolvidable
-                      </strong>{" "}
+                      </strong>
                       . ¡Únete a nuestro curso y convierte tus sueños
                       decorativos en realidad!
                     </p>
