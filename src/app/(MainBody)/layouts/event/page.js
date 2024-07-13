@@ -7,6 +7,7 @@ import Services from "@/containers/layouts/sections/app/services";
 import Portfolio from "@/containers/layouts/sections/resume/section";
 import About from "@/containers/layouts/sections/gym/about";
 import Footer from "@/containers/layouts/sections/resume/footer";
+import BannerCursos from "@/containers/layouts/sections/resume/banner";
 
 const Event = () => {
   useEffect(() => {
@@ -18,14 +19,14 @@ const Event = () => {
   return (
     <div>
       <Head>
-        <title>Events Layout </title>
+        <title>Cursos de Decoración</title>
       </Head>
       <Header className="event nav-lg" />
 
-      <AboutSection />
+      <BannerCursos isEventPage={false} />
       <Portfolio isEventPage={false} />
       <Services />
-      <About />
+      <About isEventPage={false} />
       <Footer />
     </div>
   );

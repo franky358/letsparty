@@ -26,6 +26,7 @@
     "nprogress": "^0.2.0",
     "react": "^18.2.0",
     "react-18-image-lightbox": "^5.1.4",
+    "react-canvas-confetti": "^2.0.7",
     "react-countdown-now": "^2.1.2",
     "react-countup": "^6.4.2",
     "react-dom": "^18.2.0",

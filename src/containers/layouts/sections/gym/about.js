@@ -115,9 +115,9 @@ const About = ({ isEventPage }) => (
                       className="p-light about-para"
                       style={{ textAlign: "justify" }}
                     >
-                      Permítenos hacer de tu próximo evento, algo inolvidable
-                      con nuestros increíbles diseños de globos. ¡Contáctanos y
-                      deja la magia de tu evento en nuestras manos!
+                      Permítenos hacer de tu próximo evento algo inolvidable con
+                      nuestros increíbles diseños de globos. ¡Contáctanos y deja
+                      la magia de tu evento en nuestras manos!
                     </p>
                   </>
                 ) : (

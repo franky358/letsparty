@@ -1,15 +1,17 @@
 import React from "react";
 import { Container, Row, Col } from "reactstrap";
 import { FaWhatsapp } from "@react-icons/all-files/fa/FaWhatsapp";
+import Realistic from "react-canvas-confetti/dist/presets/realistic";
 
 const About = () => (
-  <section className="event about bg-about">
+  <section className="event about">
+    <Realistic autorun={{ speed: 0.3, duration: "5000", delay: "500" }} />{" "}
     <Container>
       <Row style={{ marginTop: "46px" }}>
         <Col md="10" className="offset-md-1">
           <div className="title title3 only-title">
             <div className="main-title">
-              <h2 className=" text-white">CURSO DE BACKDROPS Y CANDY BAR 🎈</h2>
+              <h2 className="">CURSO DE BACKDROPS Y CANDY BAR 🎈</h2>
             </div>
           </div>
         </Col>

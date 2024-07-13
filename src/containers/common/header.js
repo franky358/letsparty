@@ -64,7 +64,7 @@ const Header = (props) => {
                   <img
                     alt=""
                     className="img-fluid"
-                    src="/assets/images/logo/letsparty.jpg"
+                    src="/assets/images/logo/letsparty3.jpg"
                     style={{ height: "55px" }}
                   />
                 )}
