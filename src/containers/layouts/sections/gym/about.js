@@ -204,7 +204,11 @@ const About = ({ isEventPage }) => (
               </h3>
               <a
                 className="btn btn-default primary-btn"
-                href="https://api.whatsapp.com/send?phone=+525554699114&text=Quiero%20informaci%C3%B3n%20del%20curso%20de%20decoraci%C3%B3n%20%F0%9F%8E%88"
+                href={
+                  isEventPage
+                    ? "https://api.whatsapp.com/send?phone=+525554699114&text=Quiero%20una%20cotizaci%C3%B3n%20%F0%9F%8E%88"
+                    : "https://api.whatsapp.com/send?phone=+525554699114&text=Quiero%20informaci%C3%B3n%20del%20curso%20de%20decoraci%C3%B3n%20%F0%9F%8E%88"
+                }
               >
                 Pedir Informes <FaWhatsapp size={16} />
               </a>
