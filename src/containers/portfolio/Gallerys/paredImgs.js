@@ -1,17 +1,49 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
 import LightGallery from "lightgallery/react";
 import "lightgallery/css/lightgallery.css";
+import "lightgallery/css/lg-thumbnail.css";
+import "lightgallery/css/lg-zoom.css";
+import "./custom-lightgallery.css"; // Importa tu CSS personalizado
 import lgThumbnail from "lightgallery/plugins/thumbnail";
 import lgZoom from "lightgallery/plugins/zoom";
 import { ParedImgData } from "../database";
-
 import { ParedImgDataEvent } from "../database2";
 
 const ParedImgFunc = ({ className, title, subTitle, isEventPage }) => {
+  const lightGalleryRef = useRef(null);
   const wallData = isEventPage ? ParedImgDataEvent : ParedImgData;
+
+  const handleClose = () => {
+    if (lightGalleryRef.current) {
+      lightGalleryRef.current.closeGallery();
+    }
+  };
+
+  useEffect(() => {
+    const handleOpen = () => {
+      const closeButton = document.createElement("button");
+      closeButton.innerText = "Cerrar";
+      closeButton.classList.add("lg-custom-close");
+      closeButton.onclick = handleClose;
+
+      const lgContainer = document.querySelector(".lg-current .lg");
+      if (lgContainer) {
+        lgContainer.appendChild(closeButton);
+      }
+    };
+
+    document.addEventListener("lgAfterOpen", handleOpen);
+
+    return () => {
+      document.removeEventListener("lgAfterOpen", handleOpen);
+    };
+  }, []);
 
   return (
     <LightGallery
+      onInit={(detail) => {
+        lightGalleryRef.current = detail.instance;
+      }}
       speed={500}
       plugins={[lgThumbnail, lgZoom]}
       closable={true}

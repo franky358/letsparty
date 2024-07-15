@@ -51,23 +51,22 @@ const Banner = ({ isEventPage }) => {
                       </h4>
                     </div>
                     <div className="header-sub-text">
-                      <p className="font-secondary font-large">
-                        {isEventPage
-                          ? "Con un toque especial y con mucho amor en lo que hacemos, lograremos transformar tu espacio en algo mágico"
-                          : "Te enseñaremos a crear decoraciones con globos desde cero"}
-                      </p>
-                      {/* {!isEventPage && (
-                        <ul style={{ margi }}>
-                          <li>
-                            Backdrop:Pared de globos, aro, aro con lona, mampara
-                            y shimmer wall.
-                          </li>
-                          <li>
-                            {" "}
-                            Mesa de dulces: Básica, intermedia y personalizada.
-                          </li>
-                        </ul>
-                      )} */}
+                      {isEventPage && (
+                        <p className="font-secondary font-large">
+                          Con un toque especial y con mucho amor en lo que
+                          hacemos, lograremos transformar tu espacio en algo
+                          mágico
+                        </p>
+                      )}
+                      {!isEventPage && (
+                        <p className="font-secondary font-large">
+                          Te enseñaremos a crear{" "}
+                          <strong style={{ fontWeight: "bold" }}>
+                            decoraciones con globos
+                          </strong>{" "}
+                          desde cero
+                        </p>
+                      )}
                     </div>
                     <div className="link-horizontal">
                       <ul>

@@ -53,8 +53,11 @@ const About = () => (
               </div>
               <div className="format-head-text">
                 <h3 className="about-font-header text-white">
-                  Te enseñaremos a crear decoraciones con globos desde cero
-                  aplicadas en 2 módulos:
+                  Te enseñaremos a crear{" "}
+                  <strong style={{ fontWeight: "bold" }}>
+                    decoraciones con globos
+                  </strong>{" "}
+                  desde cero aplicadas en 2 módulos:
                 </h3>
               </div>
               <div className="format-sub-text">

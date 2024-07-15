@@ -16,7 +16,16 @@ const Section = ({ isEventPage }) => (
                   ? "Algunas de nuestras decoraciones"
                   : "Módulos del curso"}
               </h2>
-              <p style={{ marginTop: "1rem" }}>Selecciona una categoría 👇</p>
+              <p
+                style={{
+                  marginTop: "1rem",
+                  paddingLeft: "1rem",
+                  paddingRight: "1rem",
+                }}
+              >
+                Selecciona una categoría para ver lo que aprenderás en el curso
+                👇
+              </p>
             </div>
           </div>
         </div>
